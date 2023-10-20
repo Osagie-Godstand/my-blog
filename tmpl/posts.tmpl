@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+    <meta property="og:title" content="My Projects">
+    <meta property="og:url" content="https://osagie.gg/posts">
+    <meta property="og:description" content="Explore my projects and their links on GitHub.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="static/style/about.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1 style="color: lightblue;">Demo Projects</h1>
+    </div>
+    <div class="project-list">
+        <div class="project" style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+            <h2>gRPC-weather-data-fetcher</h2>
+            <p>Efficiently serves secured weather data via gRPC and HTTP by combining Protocol Buffers, the Gorilla Mux router, and TLS (Transport Layer Security) encryption. It uses a self-signed TLS certificate suitable for development purposes only.</p>
+            <a href="https://github.com/Osagie-Godstand/gRPC-weather-data-fetcher.git">GitHub Repository</a>
+            <p>To generate your own cert.pem and key.pem files for this project use:</p>
+            <code>go run /usr/local/go/src/crypto/tls/generate_cert.go --rsa-bits=2048 --host=localhost</code>
+        </div>
+
+        <div class="project" style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+            <h2>chi-postgres-user-account</h2>
+            <p>User Account CRUD, login and logout using sessions. Made with go-chi router and PostgreSQL with Docker containerization. This project also includes automation for program compilation using a Makefile.</p>
+            <a href="https://github.com/Osagie-Godstand/chi-postgres-user-account.git">GitHub Repository</a>
+            <p>To build the target, use:</p>
+            <code>make build-app</code>
+            <p>To run the target, use:</p>
+            <code>make run</code>
+            <p>To run the API inside a Docker container, use:</p>
+            <code>make docker</code>
+        </div>
+
+        <!-- Add more project entries as needed -->
+    </div>
+    <div class="links">
+        <a class="link" href="/">Home</a>
+        <a class "link" href="/about">About Me</a>
+        <a class="link" href="https://github.com/Osagie-Godstand">GitHub Profile</a>
+        <a class="link" href="https://www.linkedin.com/in/osagie-godstand-2a0472156/">LinkedIn Profile</a>
+    </div>
+</body>
+</html>
