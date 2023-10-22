@@ -18,6 +18,10 @@ func main() {
 
 	r.Get("/posts", postsHandler)
 
+	r.Get("/project1", project1Handler)
+
+	r.Get("/project2", project2Handler)
+
 	fmt.Println("Server is running on :8080")
 	http.ListenAndServe(":8080", r)
 }
@@ -32,4 +36,12 @@ func aboutHandler(w http.ResponseWriter, r *http.Request) {
 
 func postsHandler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "tmpl/posts.tmpl")
+}
+
+func project1Handler(w http.ResponseWriter, r *http.Request) {
+	http.ServeFile(w, r, "tmpl/project1/project1.tmpl")
+}
+
+func project2Handler(w http.ResponseWriter, r *http.Request) {
+	http.ServeFile(w, r, "tmpl/project2/project2.tmpl")
 }

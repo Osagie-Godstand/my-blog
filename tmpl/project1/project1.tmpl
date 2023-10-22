@@ -12,22 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="static/style/about.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>gRPC-weather-data-fetcher</title>
 </head>
 <body>
     <div class="header">
-        <h1>Posts</h1>
+        <h1 style="color: lightblue;">gRPC-weather-data-fetcher</h1>
     </div>
-    <div class="navigation">
-        <a href="/">Home</a>
-        <a href="/about">About</a>	
-        <a href="https://github.com/Osagie-Godstand">GitHub</a>
-        <a href="https://www.linkedin.com/in/osagie-godstand-2a0472156/">LinkedIn</a>
+    <div class="project">
+        <h2>gRPC-weather-data-fetcher</h2>
+        <p>An endpiont that efficiently serves secured weather data via gRPC and HTTP by combining Protocol Buffers, the Gorilla Mux router, and TLS (Transport Layer Security) encryption. It uses a self-signed TLS certificate suitable for development purposes only.</p>
+        <a href="https://github.com/Osagie-Godstand/gRPC-weather-data-fetcher.git">GitHub Repository</a>
+        <p>To generate your own cert.pem and key.pem files for this project use:</p>
+        <code>go run /usr/local/go/src/crypto/tls/generate_cert.go --rsa-bits=2048 --host=localhost</code>
     </div>
-    <div class="project-list">
-        <ul>
-            <li> 2023-10-22 <a href="project1">gRPC-weather-data-fetcher</a></li>
-            <li> 2023-10-22 <a href="project2">chi-postgres-user-account</a></li>
-        </ul>
+    <div class="links">
+        <a href="posts">Back to Posts</a>
     </div>
     <footer>
     <p>&copy; 2023 <a href="/"><b>© 2023 Osagie Godstand</b></a>.
