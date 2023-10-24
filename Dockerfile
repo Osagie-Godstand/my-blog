@@ -18,3 +18,4 @@ RUN go build -o bin/app ./cmd/app
 
 # Set the entry point of the container to the executable
 CMD ["./bin/app"]
+
