@@ -22,6 +22,10 @@ func main() {
 
 	r.Get("/project2", project2Handler)
 
+	r.Get("/project3", project3Handler)
+
+	r.Get("/project4", project4Handler)
+
 	fmt.Println("Server is running on :8080")
 	http.ListenAndServe(":8080", r)
 }
@@ -44,4 +48,12 @@ func project1Handler(w http.ResponseWriter, r *http.Request) {
 
 func project2Handler(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "tmpl/project2/project2.tmpl")
+}
+
+func project3Handler(w http.ResponseWriter, r *http.Request) {
+	http.ServeFile(w, r, "tmpl/project3/project3.tmpl")
+}
+
+func project4Handler(w http.ResponseWriter, r *http.Request) {
+	http.ServeFile(w, r, "tmpl/project4/project4.tmpl")
 }
