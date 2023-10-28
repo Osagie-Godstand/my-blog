@@ -37,6 +37,34 @@ position: absolute;
 	border-radius: 10000000px;
 	animation: circleZoom forwards 3s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
+@media (max-width: 768px) {
+    .circles {
+        display: none;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .description h3 {
+        font-size: 20px;
+    }
+
+    .links {
+        text-align: center;
+        position: static;
+        margin-top: 20px;
+    }
+
+    .links a {
+        display: inline-block;
+        margin: 6px 12px;
+    }
+}
 .circles .circle:nth-child(1):after {
 	animation-delay: 150ms;
 }
@@ -272,4 +300,3 @@ margin-left: 4px;
 		color: #000; 
 	}
 }
-
