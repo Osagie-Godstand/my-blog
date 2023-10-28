@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-* {
-    box-sizing: border-box;
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -12,7 +8,6 @@ html, body {
     background: #6A5ACD;
     font-family: Arial, sans-serif; 
 }
-
 
 .circles {
 	width: 100%;
