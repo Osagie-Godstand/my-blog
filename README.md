@@ -1,6 +1,6 @@
 # osagie
 About Me: https://odmg.dev/about use this custom domain or
-          https://app-q26y5ih5gq-nw.a.run.app/about
+  - https://app-q26y5ih5gq-nw.a.run.app/about
 
 
 
