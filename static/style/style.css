@@ -256,7 +256,7 @@ text-align: right;
 }
 
 .links a:hover {
-	color: #555; 
+	color: #000; 
 }
 .links a:after {
 display: inline-block;
@@ -266,7 +266,7 @@ margin-left: 4px;
 
 @keyframes linksHighlight {
 	0% {
-		color: #333; 
+		color: #000; 
 	}
 	100% {
 		color: #000; 
