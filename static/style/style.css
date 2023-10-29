@@ -97,7 +97,7 @@ html, body {
     align-items: center;
     color: lightblue;
     font-family: "Inter", sans-serif;
-    font-size: 29px; 
+    font-size: 24px; 
     animation: titleZoom forwards 1s cubic-bezier(0.39, 0.58, 0.57, 1);
     animation-delay: 1200ms;
 }
@@ -107,7 +107,7 @@ html, body {
         font-size: 0;
     }
     100% {
-        font-size: 29px; 
+        font-size: 24px; 
     }
 }
 
