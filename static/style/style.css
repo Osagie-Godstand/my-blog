@@ -86,30 +86,31 @@ html, body {
 	}
 }
 .title {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	display: inline-flex;
-	color: lightblue;
-	font-family: "Inter", sans-serif;
-	font-size: 0;
-	animation: titleZoom forwards 1s cubic-bezier(0.39, 0.58, 0.57, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: lightblue;
+    font-family: "Inter", sans-serif;
+    font-size: 29px; 
+    animation: titleZoom forwards 1s cubic-bezier(0.39, 0.58, 0.57, 1);
     animation-delay: 1200ms;
 }
 
 @keyframes titleZoom {
-	0% {
-		font-size: 0;
-	}
-	100% {
-		font-size: 48px;
-	}
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: 29px; 
+    }
 }
+
 .description {
 	position: absolute;
 	top: 60%;
