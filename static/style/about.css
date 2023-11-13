@@ -13,8 +13,8 @@ html {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bgcolor: #1f1f1f;
-        --fontcolor: white;
+        --bgcolor: white;
+        --fontcolor: #1f1f1f;
         --linkcolor: #5bf;
         --visitedcolor: #ae5ee0;
         --precolor: #fff;
@@ -28,8 +28,9 @@ body {
     padding: 0 10px;
     font: 14px/1.5 monospace;
     color: var(--fontcolor);
-    background: var(--bgcolor)
+    background: var(--bgcolor);
 }
+
 
 a:link {
     color: var(--linkcolor)
