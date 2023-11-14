@@ -105,10 +105,9 @@ body {
 }
 
 .toggle-button {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 1000; 
     background: transparent;
     border: none;
     cursor: pointer;
@@ -116,5 +115,4 @@ body {
     color: var(--fontcolor);
     font-size: 1.1em; 
 }
-
 
