@@ -1,7 +1,7 @@
-# osagie
-About Me: https://odmg.dev/about use this custom domain or
-  - https://app-q26y5ih5gq-nw.a.run.app/about
-
+# my-blog
+Blog: https://odmg.dev/posts use custom domain 
+         or 
+https://app-q26y5ih5gq-nw.a.run.app/posts
 
 
 ## use this command to deploy the docker container to your gcloud account

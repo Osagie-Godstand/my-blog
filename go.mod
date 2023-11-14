@@ -1,4 +1,4 @@
-module github.com/Osagie-Godstand/osagie
+module github.com/Osagie-Godstand/my-blog
 
 go 1.21
 
