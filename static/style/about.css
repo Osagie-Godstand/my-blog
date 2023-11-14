@@ -26,7 +26,7 @@ body {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 10px;
-    font: 16px/1.6 monospace;
+    font: 14px/1.6 monospace;
     color: var(--fontcolor);
     background: var(--bgcolor);
 }
