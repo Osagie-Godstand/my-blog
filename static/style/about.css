@@ -26,9 +26,15 @@ body {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 10px;
-    font: 14px/1.6 monospace;
+    font: 16px/1.9 'Roboto', sans-serif;
     color: var(--fontcolor);
     background: var(--bgcolor);
+}
+
+.text-sm {
+    font-size: 13px; 
+    line-height: 1.6; 
+    color: #666; 
 }
 
 a:link {
@@ -44,6 +50,7 @@ a:active {
 }
 
 h1,h2,h3 {
+    font: monospace;
     line-height: 1.2
 }
 
