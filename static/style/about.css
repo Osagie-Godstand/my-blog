@@ -1,5 +1,5 @@
 html {
-    overflow-y: scroll
+    overflow-y: scroll;
 }
 
 :root {
@@ -8,7 +8,7 @@ html {
     --linkcolor: #00e;
     --visitedcolor: #551a8b;
     --precolor: #fff;
-    --prebgcolor: #000;
+    --prebgcolor: #1f1f1f;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +17,7 @@ html {
         --fontcolor: #1f1f1f;
         --linkcolor: #5bf;
         --visitedcolor: #ae5ee0;
-        --precolor: #fff;
+        --precolor: white;
         --prebgcolor: #383838;
     }
 }
@@ -38,37 +38,37 @@ body {
 }
 
 a:link {
-    color: var(--linkcolor)
+    color: var(--linkcolor);
 }
 
 a:visited {
-    color: var(--visitedcolor)
+    color: var(--visitedcolor);
 }
 
 a:active {
-    color: var(--visitedcolor)
+    color: var(--visitedcolor);
 }
 
-h1,h2,h3 {
+h1, h2, h3 {
     font: monospace;
-    line-height: 1.2
+    line-height: 1.2;
 }
 
 p > code {
     color: var(--precolor);
     background: var(--prebgcolor);
-    padding: 2px
+    padding: 2px;
 }
 
 pre {
     color: var(--precolor);
     background: var(--prebgcolor);
     padding: 24px;
-    overflow-x: auto
+    overflow-x: auto;
 }
 
 article {
-    padding: 24px 0
+    padding: 24px 0;
 }
 
 .center {
@@ -85,7 +85,7 @@ figcaption {
 }
 
 figure {
-    margin: auto
+    margin: auto;
 }
 
 img {
@@ -94,3 +94,26 @@ img {
     height: auto;
     margin: 0 auto;
 }
+
+.dark-mode {
+    background: #1f1f1f;
+    color: white;
+}
+
+body {
+    position: relative;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 70px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    color: var(--fontcolor);
+    font-size: 1.1em; 
+}
+
+
