@@ -7,6 +7,7 @@ Blog: https://odmg.dev/posts
 - if projectID is (about-me-20407)
 - you have to run: $ gcloud config set project about-me-20407 
 
-- second step:  gcloud run deploy --source /path/to/directory 
+- second step:  gcloud run deploy --source /path/to/directory
+- then pick your region of choice before deploying
 
 
