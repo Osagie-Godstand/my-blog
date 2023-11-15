@@ -16,15 +16,17 @@
     <link rel="stylesheet" href="/static/style/about.css">
     <script src="/static/js/dark-mode.js" defer></script>
 </head>
+
 <body>
+    <div class="header">
+        <h1 style="color: lightblue;">Demo Project</h1>
+    </div>
+
     <button onclick="myFunction()" id="darkModeToggle" class="toggle-button">
         <i class="fas fa-sun"></i>
         <i class="fas fa-moon"></i>
     </button>
 
-    <div class="header">
-        <h1 style="color: lightblue;">Demo Project</h1>
-    </div>
     <div class="project">
         <h2>gRPC-weather-data-fetcher</h2>
         <p>An endpoint that efficiently serves secured weather data via gRPC and HTTP by combining Protocol Buffers, the Gorilla Mux router, and TLS (Transport Layer Security) encryption. It uses a self-signed TLS certificate suitable for development purposes only.</p>
