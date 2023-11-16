@@ -17,16 +17,24 @@
     <script src="/static/js/dark-mode.js" defer></script>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="links">
+            <a class="link" href="/">Home</a>
+            <a class="link" href="posts">Posts</a>
+        </div>
+
+        <button onclick="myFunction()" id="darkModeToggle" class="toggle-button">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
     <div class="title">
         <h1 style="color: lightblue;">About Me</h1>
     </div>
-    <button onclick="myFunction()" id="darkModeToggle" class="toggle-button">
-        <i class="fas fa-sun"></i>
-        <i class="fas fa-moon"></i>
-    </button>
 
-    <img src="static/images/image.png" alt="image" width="200" height="100" style="border-radius: 50%;">
-    
+    <img src="static/images/image.png" alt="image" width="190" height="100" style="border-radius: 50%;">
+
     <div class="description">
     <p><strong>Hi, I'm Osagie.</strong></p>
         <p>I'm a software developer who's genuinely passionate about creating software that can make a positive impact. 🌱 I'm always striving to learn and grow. 🚀</p>
@@ -35,10 +43,9 @@
         <p>Explore my <a class="link" href="/posts">Posts</a></p>
         <p>Thank you for visiting my website!</p>
     </div>
-    <div class="links">
-        <a class="link" href="/">Home</a>
-        <a class="link" href="https://github.com/Osagie-Godstand">Github</a>
-        <a class="link" href="https://www.linkedin.com/in/osagie-godstand-2a0472156/">LinkedIn</a>
+    <div class="o-links">
+        <a class="o-link" href="https://github.com/Osagie-Godstand">Github</a>
+        <a class="o-link" href="https://www.linkedin.com/in/osagie-godstand-2a0472156/">LinkedIn</a>
     </div>
     <footer>
         <p>&copy; 2023 <a href="/"><b>© 2023 Osagie Godstand</b></a>.

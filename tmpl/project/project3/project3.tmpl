@@ -17,35 +17,50 @@
     <script src="/static/js/dark-mode.js" defer></script>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="links">
+            <a class="link" href="/">Home</a>
+            <a class="link" href="posts">Posts</a>
+        </div>
+
+        <button onclick="myFunction()" id="darkModeToggle" class="toggle-button">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
     <div class="header">
         <h1 style="color: lightblue;">Demo Project</h1>
     </div>
-    <button onclick="myFunction()" id="darkModeToggle" class="toggle-button">
-        <i class="fas fa-sun"></i>
-        <i class="fas fa-moon"></i>
-    </button>
-
     <div class="project">
         <h2>go-k8s-google-cluster</h2>
         <p>Demo setup for deploying Docker containerized Go applications to an Autopilot Cluster in Google Cloud Platform's(GCP) Kubernetes Engine(GKE) using Makefile automation.</p>
         <a href="https://github.com/Osagie-Godstand/go-k8s-google-cluster.git">GitHub Repository</a>
         <p>find all the commands for creation and deployment in the cmd.txt file of the repo.</p>
     </div>
+
     <h3>Kubernetes Autopilot Cluster</h3>
     <img src="static/images/kubernetes.png" alt="proof of deployment" width="600" height="300">
+
      <h3>Successful Deployment Status</h3>
     <img src="static/images/deployment.png" alt="proof of deployment" width="600" height="300">
-    <div class="links">
+
+    <div class="k-links">
     <h3>Service for Discovery & Load Balancing</h3>
     <img src="static/images/service.png" alt="proof of deployment" width="600" height="300">
+
     <h3>Deployment, Service & Pod Status from Terminal</h3>
     <img src="static/images/deploymentstatus.png" alt="proof of deployment" width="600" height="300">
+
     <p>Display of my GKE sample app deployment and status.</p> 
-    <div class="links">
+
+    <div class="k-links">
         <a href="posts">Back to Posts</a>
     </div>
+
     <footer>
         <p>&copy; 2023 <a href="/"><b>© 2023 Osagie Godstand</b></a>.</p>
     </footer>
+
 </body>
 </html>

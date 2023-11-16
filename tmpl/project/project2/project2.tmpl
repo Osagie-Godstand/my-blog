@@ -17,14 +17,21 @@
     <script src="/static/js/dark-mode.js" defer></script>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="links">
+            <a class="link" href="/">Home</a>
+            <a class="link" href="posts">Posts</a>
+        </div>
+
+        <button onclick="myFunction()" id="darkModeToggle" class="toggle-button">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
     <div class="header">
         <h1 style="color: lightblue;">Demo Project</h1>
     </div>
-
-    <button onclick="myFunction()" id="darkModeToggle" class="toggle-button">
-        <i class="fas fa-sun"></i>
-        <i class="fas fa-moon"></i>
-    </button>
 
     <div class="project">
         <h2>chi-postgres-user-account</h2>

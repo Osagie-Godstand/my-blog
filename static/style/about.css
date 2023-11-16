@@ -106,8 +106,8 @@ body {
 
 .toggle-button {
     position: absolute;
-    top: 0;
-    right: 10px;
+    top: 13px;
+    right: 20px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -116,3 +116,33 @@ body {
     font-size: 1.1em; 
 }
 
+/* Add this CSS at the end of your existing CSS file */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: lightblue;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+    border-bottom: 2px solid var(--bordercolor); /* Add a border to make it straight */
+}
+
+.links {
+    display: flex;
+}
+
+.link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--linkcolor);
+}
+
+/* Additional style to give some spacing above the image */
+img {
+    margin-top: 20px; /* Adjust the margin as needed */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}

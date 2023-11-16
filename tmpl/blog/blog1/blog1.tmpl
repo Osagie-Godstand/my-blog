@@ -18,15 +18,22 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="links">
+            <a class="link" href="/">Home</a>
+            <a class="link" href="about">About</a>
+            <a class="link" href="posts">Posts</a>
+        </div>
+
+        <button onclick="myFunction()" id="darkModeToggle" class="toggle-button">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+        </nav>
     <div class="header">
-        <img src="static/images/nvim.png" alt="weather fetcher response" width="700" height="600">
         <h1 style="color: lightblue;">The Power of the Terminal</h1>
     </div>
 
-    <button onclick="myFunction()" id="darkModeToggle" class="toggle-button">
-        <i class="fas fa-sun"></i>
-        <i class="fas fa-moon"></i>
-    </button>
     
     <div class="text-sm">
         By Osagie Godstand
@@ -64,3 +71,4 @@
     </footer>
 </body>
 </html>
+
