@@ -41,16 +41,16 @@
     </div>
     <h3>Creating Products</h3>
     <img src="static/images/create-product.png" alt="creating products" width="600" height="300">
-    <p>As demonstrated in the screenshot of my post request, the process of creating multiple products concurrently utilizes only <b>41 bytes of memory</b> and completes in a mere <b>5 milliseconds</b>, showcasing the efficiency achieved through the use of goroutines and channels.</p>
+    <p>As demonstrated in the screenshot of my post request, the process of <b>creating multiple products concurrently utilizes</b> only <b>41 bytes of memory</b> and completes in a mere <b>5 milliseconds</b>, showcasing the <b>efficiency achieved</b> through the use of <b>goroutines</b> and <b>channels</b>.</p>
     <h3>Fetching Products</h3>
     <img src="static/images/get-products.png" alt="fetching product from db" width="600" height="300">
     <p> ... </p>
     <h3>Fetching Product by ID</h3>
     <img src="static/images/get_productbyid.png" alt="fetching a product" width="600" height="300">
-    <p> ... </p>
+    <p> Using a universally unique identifier <b>(UUID)</b> as the primary key prevents the occurrence of collisions, ensuring that no two systems produce the same ID. This is particularly advantageous for <b>distributed systems</b> where multiple entities may be concurrently inserting data into the database, as opposed to using sequential IDs. </p>
     <h3>Updating a Product</h3>
     <img src="static/images/update_product.png" alt="updating a product" width="600" height="300">
-    <p> ... </p>
+    <p> Every attribute of the product model can be updated. </p>
     <h3>Deleting Product</h3>
     <img src="static/images/delete_product.png" alt="deleting product from db" width="600" height="300">
     <p> ... </p>
