@@ -37,35 +37,29 @@
         <h2>product-crud-endpoints</h2>
         <p>Product CRUD RESTful endpoints. Using <b>goroutines</b> and <b>channels</b> to <b>concurrently create products</b>. Including a <b>unit test</b> that is used to <b>test concurrent product creation</b> and <b>integration test</b>.</p>
         <p> View the <a href="https://github.com/Osagie-Godstand/product-crud-endpoints.git">GitHub Repository</a></p>
-        <p> Find the code that creates products concurrently and the unit test in <a href="https://gist.github.com/Osagie-Godstand/6d0d2a9abc29b7e2451d09165dfc148f">GitHub Gists</a></p>       
+        <p> Find the code that creates products concurrently, along with the tests, in <a href="https://gist.github.com/Osagie-Godstand/6d0d2a9abc29b7e2451d09165dfc148f">GitHub Gists</a></p>       
     </div>
-    <h3> === Integration Test</h3>
+    <h3>=== Unit Test</h3>
+    <img src="static/images/TCPC.png" alt="concurrency test" width="600" height="300">
+    <p> The <b>unit test</b> checks the behaviour of the <b>createProduct function</b> when provided with a specific request. It verifies that the function correctly handles the request, interacts with the mock product store as expected, and produces the correct HTTP response. </p>
+    <h3>=== Integration Test</h3>
         <img src="static/images/TestProductStore.png" alt="creating products" width="600" height="300">
-    <p> The <b>TestProductStore</b> <b>integration test</b> is running against a real <b>PostgreSQL database</b> in a <b>Docker container</b> using the <b>Testcontainers and sql-migrate libraries</b>.</p>
+    <p> <b>TestProductStore</b> <b>integration test</b> is running against a real <b>PostgreSQL database</b> in a <b>Docker container</b> using the <b>Testcontainers and sql-migrate libraries</b>.</p>
     <h3>Creating Products</h3>
     <img src="static/images/create-product.png" alt="creating products" width="600" height="300">
     <p>As demonstrated in the screenshot of my post request, the process of <b>creating multiple products concurrently utilizes</b> only <b>41 bytes of memory</b> and completes in a mere <b>5 milliseconds</b>, showcasing the <b>efficiency achieved</b> through the use of <b>goroutines</b> and <b>channels</b>.</p>
-    <h3>createProduct Unit Test</h3>
-    <img src="static/images/TCPC.png" alt="concurrency test" width="600" height="300">
-    <p> The <b>unit test</b> checks the behaviour of the <b>createProduct function</b> when provided with a specific request. It verifies that the function correctly handles the request, interacts with the mock product store as expected, and produces the correct HTTP response. </p>
     <h3>Fetching Products</h3>
     <img src="static/images/get-products.png" alt="fetching product from db" width="600" height="300">
-    <p> ... </p>
+    <p> This endpoint fetches every product that exists in the database. </p>
     <h3>Fetching Product by ID</h3>
     <img src="static/images/get_productbyid.png" alt="fetching a product" width="600" height="300">
     <p> Using a universally unique identifier <b>(UUID)</b> as the primary key prevents the occurrence of collisions, ensuring that no two systems produce the same ID. This is particularly advantageous for <b>distributed systems</b> where multiple entities may be concurrently inserting data into the database, as opposed to using sequential IDs. </p>
     <h3>Updating a Product</h3>
     <img src="static/images/update_product.png" alt="updating a product" width="600" height="300">
     <p> Every attribute of the product model can be updated. </p>
-    <h3>Deleting Product</h3>
+    <h3>Deleting a Product</h3>
     <img src="static/images/delete_product.png" alt="deleting product from db" width="600" height="300">
-    <p> ... </p>
-    <h3>Running the Program</h3>
-    <img src="static/images/fresh_start.png" alt="running the program the first time" width="600" height="300">
-    <p> A script tries to create some products when you run the program. The product is only created if the data that the script intends to create does not already exist in your database. </p>
-    <h3>Rerunning the Program</h3> 
-    <img src="static/images/rerunning.png" alt="running the program again" width="600" height="300">
-    <p> Rerunning the program demonstrates that the script will skip if the SKU of that product already exists in the database. </p> 
+    <p> The message shows that a product has been successfully deleted from the database. </p>
     <div class="links">
         <a href="posts">Back to Posts</a>
     </div>
