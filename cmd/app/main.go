@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
+	"os"
 
 	"github.com/go-chi/chi/v5"
 )
@@ -29,37 +31,59 @@ func main() {
 	r.Get("/blog1", blog1Handler)
 
 	fmt.Println("Server is running on :8080")
-	http.ListenAndServe(":8080", r)
+	err := http.ListenAndServe(":8080", r)
+	if err != nil {
+		log.Fatal("Error starting server: ", err)
+	}
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "tmpl/index.tmpl")
+	serveFile(w, r, "tmpl/index.tmpl")
 }
 
 func aboutHandler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "tmpl/about.tmpl")
+	serveFile(w, r, "tmpl/about.tmpl")
 }
 
 func postsHandler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "tmpl/posts.tmpl")
+	serveFile(w, r, "tmpl/posts.html")
 }
 
 func project1Handler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "tmpl/project/project1/project1.tmpl")
+	serveFile(w, r, "tmpl/project/project1/project1.tmpl")
 }
 
 func project2Handler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "tmpl/project/project2/project2.tmpl")
+	serveFile(w, r, "tmpl/project/project2/project2.tmpl")
 }
 
 func project3Handler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "tmpl/project/project3/project3.tmpl")
+	serveFile(w, r, "tmpl/project/project3/project3.tmpl")
 }
 
 func project4Handler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "tmpl/project/project4/project4.tmpl")
+	serveFile(w, r, "tmpl/project/project4/project4.tmpl")
 }
 
 func blog1Handler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "tmpl/blog/blog1/blog1.tmpl")
+	serveFile(w, r, "tmpl/blog/blog1/blog1.tmpl")
+}
+
+func serveFile(w http.ResponseWriter, r *http.Request, filePath string) {
+	file, err := os.Open(filePath)
+	checkError(w, err)
+	defer file.Close()
+
+	fi, err := file.Stat()
+	checkError(w, err)
+
+	http.ServeContent(w, r, fi.Name(), fi.ModTime(), file)
+}
+
+func checkError(w http.ResponseWriter, err error) {
+	if err != nil {
+		http.Error(w, "Internal Server Error", http.StatusInternalServerError)
+		log.Println("Error opening file:", err)
+		return
+	}
 }
