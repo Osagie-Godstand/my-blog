@@ -46,7 +46,7 @@ func aboutHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func postsHandler(w http.ResponseWriter, r *http.Request) {
-	serveFile(w, r, "tmpl/posts.html")
+	serveFile(w, r, "tmpl/posts.tmpl")
 }
 
 func project1Handler(w http.ResponseWriter, r *http.Request) {
