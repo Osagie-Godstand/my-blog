@@ -35,16 +35,16 @@
 
     <div class="project">
         <h2>chi-postgres-user-account</h2>
-        <p>User Account CRUD with <b>login</b> and <b>logout</b> functions that uses <b>session validation</b>. Including <b>integration test</b> and <b>unit tests</b> that is used to <b>test token generation as well as creating a user</b>.</p>
+        <p>User Account CRUD with <b>login</b> and <b>logout</b> functions. Including <b>integration test</b> and <b>unit tests</b> that is used to <b>test token generation as well as creating a user</b>.</p>
                 <p> View the <a href="https://github.com/Osagie-Godstand/chi-postgres-user-account.git">GitHub Repository</a></p>
         <p> Find the code that <b>generates session tokens (authentication)</b> and <b>performs session validation (authorization)</b> in <a href="https://gist.github.com/Osagie-Godstand/5ba8df67fc679b13a229b5755d2befd9">GitHub Gists</a></p>
     </div>
     <h3> === Integration Test</h3>
     <img src="static/images/UserRepoIntegrationTest.png" alt="unit test" width="600" height="300">
-    <p> Integration test conducted by adding a transaction based db driver for postgres using the go-txdb and sql-migrate libraries. Find the code for TestUserRepository in <a href="https://gist.github.com/Osagie-Godstand/d279278b2a994591578556cc66c4b40a">GitHub Gists</a> </p> 
+    <p> <b>Integration test conducted</b> by adding a <b>transaction based db driver</b> for <b>postgres</b> using the <b>go-txdb and sql-migrate libraries</b>. Find the code for <b>TestUserRepository</b> in <a href="https://gist.github.com/Osagie-Godstand/d279278b2a994591578556cc66c4b40a">GitHub Gists</a> </p> 
     <h3> === Unit Tests</h3>
     <img src="static/images/testuserandtoken.png" alt="unit test" width="600" height="300">
-    <p> The unit tests are for creating a user and generating a random token for a session. Find the code for session token generation, creating a user account as well as the mock user repository in <a href="https://gist.github.com/Osagie-Godstand/f4f1cda0a9bd3a0924e11464cdba78eb">GitHub Gists</a></p>
+    <p> The <b>unit tests</b> are for <b>creating a user</b> and <b>generating a random token</b> for a session. Find the code for session token generation, creating a user account as well as the mock user repository in <a href="https://gist.github.com/Osagie-Godstand/f4f1cda0a9bd3a0924e11464cdba78eb">GitHub Gists</a></p>
     <h3> Creating User Account</h3>
     <img src="static/images/create_user.png" alt="Creating User" width="600" height="300">
     <p> The response for creating a user only includes the <b>encrypted password</b> as proof of successful creation. This data is a backend only response, it is never visible on the frontend. </p>
@@ -53,13 +53,13 @@
     <p> User login is accomplished using an <b>email</b> and <b>password</b>, and the process <b>generates a session</b> for the user. </p>
      <h3>User Logout</h3>
     <img src="static/images/user_logout.png" alt="user logout" width="600" height="300">
-    <p> Logging out immediately deletes generated session. </p>
+    <p> Logging out immediately <b>deletes generated session</b>. </p>
     <h3>Fetching User By ID</h3>
     <img src="static/images/get_userbyid.png" alt="get user by id" width="600" height="300">
     <p> Universally Unique Identifier <b>(UUID)</b> is the prerequisite to find a specific user. </p>
     <h3>Update User Details</h3>
     <img src="static/images/update_user1.png" alt="update user" width="600" height="300">
-    <p> Updates can only be made to the firstname and lastname. </p>
+    <p> <b>Updates</b> can only be made to the <b>firstname and lastname</b>. </p>
      <h3>Fetching Users</h3>
     <img src="static/images/get_users.png" alt="proof user updated" width="600" height="300">
     <p> We can see that the <b>encrypted password</b> is no longer visible in the user response, this is because the encrypted password is disclosed exclusively during the user creation process and is not showcased again when retrieving users or executing additional requests. <b>Thunder Client</b> serves as the tool for conducting these API tests. </p>
