@@ -26,13 +26,7 @@ func main() {
 
 	r.Get("/project3", project3Handler)
 
-	r.Get("/project4", project4Handler)
-
 	r.Get("/blog1", blog1Handler)
-
-	r.Get("/blog2", blog2Handler)
-
-	r.Get("/blog3", blog3Handler)
 
 	fmt.Println("Server is running on :8080")
 	err := http.ListenAndServe(":8080", r)
@@ -65,20 +59,8 @@ func project3Handler(w http.ResponseWriter, r *http.Request) {
 	serveFile(w, r, "tmpl/project/project3/project3.tmpl")
 }
 
-func project4Handler(w http.ResponseWriter, r *http.Request) {
-	serveFile(w, r, "tmpl/project/project4/project4.tmpl")
-}
-
 func blog1Handler(w http.ResponseWriter, r *http.Request) {
 	serveFile(w, r, "tmpl/blog/blog1/blog1.tmpl")
-}
-
-func blog2Handler(w http.ResponseWriter, r *http.Request) {
-	serveFile(w, r, "tmpl/blog/blog2/blog2.tmpl")
-}
-
-func blog3Handler(w http.ResponseWriter, r *http.Request) {
-	serveFile(w, r, "tmpl/blog/blog3/blog3.gohtml")
 }
 
 func serveFile(w http.ResponseWriter, r *http.Request, filePath string) {
