@@ -24,8 +24,6 @@ func main() {
 
 	r.Get("/project2", project2Handler)
 
-	r.Get("/project3", project3Handler)
-
 	r.Get("/blog1", blog1Handler)
 
 	fmt.Println("Server is running on :8080")
@@ -53,10 +51,6 @@ func project1Handler(w http.ResponseWriter, r *http.Request) {
 
 func project2Handler(w http.ResponseWriter, r *http.Request) {
 	serveFile(w, r, "tmpl/project/project2/project2.tmpl")
-}
-
-func project3Handler(w http.ResponseWriter, r *http.Request) {
-	serveFile(w, r, "tmpl/project/project3/project3.tmpl")
 }
 
 func blog1Handler(w http.ResponseWriter, r *http.Request) {
